@@ -20,12 +20,11 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
-    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5">
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
     <!-- styles -->
-    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Labinvent</title>
 </head>
 
@@ -70,14 +69,14 @@
                         <ul class="nav__list">
                             <li>
                                 <a href="!#">Instruments</a>
-                                <ul class="nav__list__sublist">
+                                <!-- <ul class="nav__list__sublist">
                                     <li>
                                         <a href="!#"></a>
                                     </li>
                                     <li>
                                         <a href="!#"></a>
                                     </li>
-                                </ul>
+                                </ul> -->
                             </li>
                             <li><a href="!#">Widgets</a></li>
                             <li><a href="!#">View</a></li>
@@ -93,6 +92,67 @@
                         </ul>
                         <div class="admin__lock"><img src="./assets/img/lock.png" alt=""></div>
                     </div>
+                </div>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <h3 class="info-card__title">Sampler</h3>
+                        <div class="info-card__body"></div>
+                    </div>
+                    <div class="info-card">
+                        <h3 class="info-card__title info-card__title--orange">Quad. Pump</h3>
+                        <div class="info-card__body"></div>
+                    </div>
+                </div>
+                <div class="method-wrapper">
+                    <div class="method">
+                        <div class="method__header">
+                            <div class="method__worklist worklist">
+                                <h3 class="worklist__title">Worklist <span>Run</span></h3>
+                            <p class="worklist__todo">To do: <span>23 injections</span></p>
+                            <p class="worklist__time">02:15:00</p>
+                            </div>
+                            <p class="method__name method__header--active-item">Method: <span>Method1.amx (00:00/04:30)</span> </p>
+                            <p class="method__single">Single run</p>
+                    </div>
+                        <div class="method__body">
+                            <ul class="method__leftbar">
+                                <li class="method__leftbar-item">ALS</li>
+                                <li class="method__leftbar-item ">Inlets</li>
+                                <li class="method__leftbar-item method__leftbar-item--active">Columns</li>
+                                <li class="method__leftbar-item"></li>
+                            </ul>
+                            <div class="method__main"></div>
+                            <div class="method__table"></div>
+                        </div>
+                        <div class="method__footer"></div>
+                    </div>
+                    <div class="add-info-wrapper">
+                         <div class="chart">
+                        <h2 class="chart__title subtitle">Live chart</h2>
+                        <div class="chart__chart">
+                            <div class="chart__grafic">
+                                <ul class="chart__list">
+                                    <li class="chart__item chart__item--active chart__item--teal">Plot</li>
+                                    <li class="chart__item chart__item--magenta">Plot</li>
+                                    <li class="chart__item chart__item--orange">Plot</li>
+                                </ul>
+                                <div class="chart__diagramm">
+                                    <img src="./assets/img/chart.png" alt="">
+                                </div>
+                            </div>
+                            <div class="chart__icons">
+                                <img src="./assets/img/chart_1.png" alt="" class="chart__icon">
+                                <img src="./assets/img/chart_2.png" alt="" class="chart__icon">
+                                <img src="./assets/img/chart_3.png" alt="" class="chart__icon">
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="spectra">
+                        <h2 class="spectra__title subtitle">Spectra</h2>
+                    </div>
+                    </div>
+                   
                 </div>
             </div>
         </main>
