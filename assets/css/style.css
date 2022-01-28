@@ -352,7 +352,7 @@ body {
 		max-width: 1920px;
 		margin: auto;
 		border: 1px solid #c9c9c9;
-		height: 100vh; }
+		height: 1080px; }
 
 a {
 		color: inherit;
@@ -585,7 +585,7 @@ a {
 				object-position: center center; }
 
 .info-cards {
-		height: calc(100vh - 50px);
+		height: calc(100% - 52px);
 		flex: 0 1 220px;
 		padding: 15px;
 		background-color: #f1f3f2; }
@@ -630,7 +630,6 @@ a {
 
 .method {
 		flex: 0 0 485px;
-		background-color: aqua;
 		margin-bottom: 15px;
 		border: 1px solid #c9c9c9; }
 		.method__header {
@@ -674,10 +673,58 @@ a {
 								border-right: none;
 								background-color: #fff;
 								z-index: 2; }
+		.method__main {
+				flex: 0 1 50%;
+				padding: 20px 15px 15px; }
+		.method__table {
+				flex: 0 1 50%;
+				background-color: teal; }
 		.method__footer {
 				height: 55px;
+				padding: 0 15px 0 25px;
 				border-top: 1px solid #c9c9c9;
-				background-color: #fff; }
+				background-color: #fff;
+				display: flex;
+				align-items: center;
+				justify-content: space-between; }
+
+.buttons-left {
+		color: #929292;
+		font-size: 12px;
+		display: flex; }
+		.buttons-left__btn:first-of-type {
+				margin-right: 30px; }
+		.buttons-left span {
+				width: 25px;
+				height: 25px;
+				line-height: 25px;
+				text-align: center;
+				font-size: 16px;
+				border-radius: 100%;
+				display: block;
+				border: 1px solid #c9c9c9;
+				margin-bottom: 4px; }
+
+.buttons-right {
+		font-size: 12px;
+		display: flex; }
+		.buttons-right__btn {
+				background-color: #12a9eb;
+				min-width: 90px;
+				height: 30px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				border-radius: 15px;
+				padding: 0 15px;
+				color: #fff;
+				margin-right: 12px; }
+				.buttons-right__btn:last-child {
+						margin-right: 0; }
+				.buttons-right__btn--outline {
+						background-color: #fff;
+						color: #12a9eb;
+						border: 1px solid #12a9eb; }
 
 .worklist {
 		display: flex;
@@ -703,7 +750,8 @@ a {
 .chart {
 		flex: 0 1 calc(55% - 15px);
 		margin-right: 15px;
-		border: 1px solid #c9c9c9; }
+		border: 1px solid #c9c9c9;
+		height: 495px; }
 		.chart__chart {
 				display: flex;
 				height: calc(100% - 50px); }
@@ -729,7 +777,9 @@ a {
 				width: 100%;
 				padding: 60px 30px 0px 15px; }
 				.chart__diagramm img {
-						max-width: 100%; }
+						max-width: 100%;
+						height: 100%;
+						object-fit: contain; }
 		.chart__list {
 				display: flex;
 				border-bottom: 1px solid #ebf2f4;
