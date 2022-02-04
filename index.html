@@ -122,50 +122,120 @@
                                 <li class="method__leftbar-item"></li>
                             </ul>
                             <div class="method__main">
-                                <div class="method__desc"></div>
-                                <div class="method__control">
-                                    <h3 class="control__title">Control mode</h3>
+                                <div class="method__scheme">
+                                    <div class="scheme">
+                                        <div class="scheme__item">
+                                            <h4 class="scheme__title">Front Inlet</h4>
+                                            <div class="scheme__img"> <img src="./assets/img/inlet.png" alt="">
+                                            </div>
+                                            <p class="scheme__desc">SS (H<sub>2</sub>)</p>
+                                        </div>
+                                        <div class="scheme__item">
+                                            <h4 class="scheme__title">Agilent 19091Q-002</h4>
+                                            <div class="scheme__img"> <img src="./assets/img/agilent.png" alt="">
+                                            </div>
+                                            <p class="scheme__desc scheme__desc--think">60 C-450 C(450 C) <span>25 m * 320 um * 1 um</span></p>
+                                        </div>
+                                        <div class="scheme__item">
+                                            <h4 class="scheme__title">Back Detector</h4>
+                                            <div class="scheme__img">
+                                                <img src="./assets/img/detector.png" alt=" ">
+                                            </div>
+                                            <p class="scheme__desc ">NPD</p>
+                                        </div>
+                                    </div>
+                                    <div class="scheme__data data ">
+                                        <div class="data__block ">
+                                            <p class="data__text ">(Initial): 0 min</p>
+                                            <p class="data__text ">ArMe @ 35 C Oven</p>
+                                            <p class="data__text ">Out: Ambient Pressure</p>
+                                            <p class="data__text ">25 m * 320 um * 1 um</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="method__control ">
+                                    <h3 class="line__title "> <span class="text ">Control mode </span><span class="hr "></span></h3>
+                                    <div class="method__form form ">
+                                        <div class="form__item form__item--full ">
+
+                                            <input type="checkbox" name="control" id="control" class="form__box">
+                                            <label for="control " class="form__label ">On</label>
+                                        </div>
+
+                                        <div class="form__item ">
+                                            <label for="formName " class="form__label ">Flow</label>
+                                            <input type="text " id="formName " name="name " class="form__input ">
+                                            <span>mL/min</span>
+                                        </div>
+                                        <div class="form__item ">
+                                            <label for="formName " class="form__label ">Average Velocity</label>
+                                            <input type="text " id="formName " name="name " class="form__input ">
+                                            <span>cm/sec</span>
+                                        </div>
+                                        <div class="form__item ">
+                                            <label for="formName " class="form__label ">Pressure</label>
+                                            <input type="text " id="formName " name="name " class="form__input ">
+                                            <span>psi</span>
+                                        </div>
+                                        <div class="form__item ">
+                                            <label for="formName " class="form__label ">Holdup time</label>
+                                            <input type="text " id="formName " name="name " class="form__input ">
+                                            <span>min</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="method__post ">
+                                    <h3 class="line__title "> <span class="text ">Post Run</span><span class="hr "></span></h3>
+                                    <div class="method__form form ">
+
+                                        <div class="form__item ">
+                                            <label for="formName " class="form__label ">Post Run</label>
+                                            <input type="text " id="formName " name="name " class="form__input ">
+                                            <span>mL/min</span>
+                                        </div>
+
+                                    </div>
                                 </div>
 
                             </div>
-                            <div class="method__table"></div>
+                            <div class="method__table "></div>
                         </div>
-                        <div class="method__footer">
-                            <div class="buttons-left">
-                                <div class="buttons-left__btn"><span>+</span>New</div>
-                                <div class="buttons-left__btn"><span>...</span>Open</div>
+                        <div class="method__footer ">
+                            <div class="buttons-left ">
+                                <div class="buttons-left__btn "><span>+</span>New</div>
+                                <div class="buttons-left__btn "><span>...</span>Open</div>
                             </div>
-                            <div class="buttons-right">
-                                <div class="buttons-right__btn">Save</div>
-                                <div class="buttons-right__btn">Save as</div>
-                                <div class="buttons-right__btn buttons-right__btn--outline">Cancel</div>
+                            <div class="buttons-right ">
+                                <div class="buttons-right__btn ">Save</div>
+                                <div class="buttons-right__btn ">Save as</div>
+                                <div class="buttons-right__btn buttons-right__btn--outline ">Cancel</div>
                             </div>
                         </div>
                     </div>
-                    <div class="add-info-wrapper">
-                        <div class="chart">
-                            <h2 class="chart__title subtitle">Live chart</h2>
-                            <div class="chart__chart">
-                                <div class="chart__grafic">
-                                    <ul class="chart__list">
-                                        <li class="chart__item chart__item--active chart__item--teal">Plot</li>
-                                        <li class="chart__item chart__item--magenta">Plot</li>
-                                        <li class="chart__item chart__item--orange">Plot</li>
+                    <div class="add-info-wrapper ">
+                        <div class="chart ">
+                            <h2 class="chart__title subtitle ">Live chart</h2>
+                            <div class="chart__chart ">
+                                <div class="chart__grafic ">
+                                    <ul class="chart__list ">
+                                        <li class="chart__item chart__item--active chart__item--teal ">Plot</li>
+                                        <li class="chart__item chart__item--magenta ">Plot</li>
+                                        <li class="chart__item chart__item--orange ">Plot</li>
                                     </ul>
-                                    <div class="chart__diagramm">
-                                        <img src="./assets/img/chart.png" alt="">
+                                    <div class="chart__diagramm ">
+                                        <img src="./assets/img/chart.png " alt=" ">
                                     </div>
                                 </div>
-                                <div class="chart__icons">
-                                    <img src="./assets/img/chart_1.png" alt="" class="chart__icon">
-                                    <img src="./assets/img/chart_2.png" alt="" class="chart__icon">
-                                    <img src="./assets/img/chart_3.png" alt="" class="chart__icon">
+                                <div class="chart__icons ">
+                                    <img src="./assets/img/chart_1.png " alt=" " class="chart__icon ">
+                                    <img src="./assets/img/chart_2.png " alt=" " class="chart__icon ">
+                                    <img src="./assets/img/chart_3.png " alt=" " class="chart__icon ">
                                 </div>
                             </div>
 
                         </div>
-                        <div class="spectra">
-                            <h2 class="spectra__title subtitle">Spectra</h2>
+                        <div class="spectra ">
+                            <h2 class="spectra__title subtitle ">Spectra</h2>
                         </div>
                     </div>
 
@@ -176,7 +246,7 @@
 
 
 
-    <script src="/assets/js/script.js"></script>
+    <script src="/assets/js/script.js "></script>
 </body>
 
 </html>
